@@ -1,0 +1,40 @@
+/*Styling the body of the whole document*/
+html, body {
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(226, 219, 200);
+}
+/*HEADER PART*/
+/*Style for the header container of the page*/
+div.header-container {
+    width: 55%;
+    background-color: rgba(143, 143, 150, 0.603);
+    height: 3em;
+    margin: 1em 22.5% 0 22.5%;
+    border-radius: 1em 1em 4em 4em;
+    padding: 0.3em;
+}
+div.header-container a {
+    text-decoration: none;
+    color: rgb(4, 49, 49);
+    font-size: 1.1em;
+    font-weight: bold;
+}
+div.header-container ul, li {
+    float: left;
+    padding-left: 2em;
+    list-style-type: none;
+}
+div.header-container img {
+    float: right;
+    padding-right: 1em ;
+}
+div.header-container p {
+    float: right;
+    padding-right: 1em;
+    color: rgb(13, 15, 0);
+    font-size: 1em;
+    font-family: cursive;
+}
