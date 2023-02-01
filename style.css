@@ -3,38 +3,186 @@ html, body {
     padding: 0;
     margin: 0;
     font-size: 1em;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(226, 219, 200);
+    color: rgb(5, 27, 87);
 }
 /*HEADER PART*/
 /*Style for the header container of the page*/
 div.header-container {
-    width: 55%;
     background-color: rgba(143, 143, 150, 0.603);
-    height: 3em;
-    margin: 1em 22.5% 0 22.5%;
-    border-radius: 1em 1em 4em 4em;
-    padding: 0.3em;
+    border-radius: 2em 1em 3em 1em;
+    margin: 0vw 22vw 0vw 22vw;
+    padding: 0em;
+    z-index: 10;
+    width:50% ;
+    height:min-content;
+    overflow: hidden;
+    position:fixed;
 }
 div.header-container a {
     text-decoration: none;
     color: rgb(4, 49, 49);
-    font-size: 1.1em;
+    font-size: min(0.8em, 1vw);
     font-weight: bold;
 }
 div.header-container ul, li {
     float: left;
-    padding-left: 2em;
+    padding-right: 3vw;
     list-style-type: none;
 }
 div.header-container img {
     float: right;
-    padding-right: 1em ;
-}
-div.header-container p {
-    float: right;
     padding-right: 1em;
-    color: rgb(13, 15, 0);
+}
+#profile {
+    padding-top: 0vw;
+}
+
+/*Styling for a tablet*/
+@media only screen and (max-width: 1100px) {
+    div.header-container {
+        width: 70%;
+        margin: 0vw 15% 0vw 15%;
+    }
+}
+/*Uisng media query to style a mobile device*/
+@media only screen and (max-width: 700px) {
+    
+    div.header-container {
+        width: 80vw;
+        margin: 0vw 10% 0vw 10%;
+    }
+    #profile {
+        padding-top: 2vw;
+    }
+  }
+
+/* MAIN PAGE */
+/*Styling the home container and its contents*/
+div.home-container {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    z-index: 1;
+}
+div.home-container div {
+    margin: 4vw 0% 1vw 0%;
+    float: left;
+}
+/*avatar and the title*/
+div.avatar {
+    align-items: center;
+    width: 60%;
+    height: auto;
+    overflow: hidden;
+}
+div.avatar div {
+    padding-top: 3em;
+    width: 100%;
+    text-align: center;
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(3, 46, 46);
+}
+#careers {
+    font-size: 0.6em;
+    color: rgb(0, 75, 0);
+}
+div.avatar img {
+  margin: 1em 0em 1em 4em;
+  border-radius: 50%;
+}
+/*Description and details*/
+div.details {
+    width: 40%;
+    height: auto;
+    overflow: hidden;
+}
+div.details p{
     font-size: 1em;
-    font-family: cursive;
+    text-transform:none;
+    text-align: center;
+    text-align-last: center;
+    line-height: 2em;
+    margin: 18em 2em 2em 2em;
+}
+/*Styling for a device (tablet) under 1200px*/
+@media only screen and (max-width: 1100px) {
+    div.home-container div {
+        margin: 4vw 15% 1vw 15%;
+        float: none;
+        width: 70%;
+    }
+    div.details p{
+        font-size: 1em;
+        text-transform:none;
+        text-align: center;
+        text-align-last: center;
+        line-height: 2em;
+        margin: 5em 5em 2em 5em;
+    }
+    div.avatar div {
+        padding-top: 5em;
+        width: 70%;
+    }
+    div.avatar img {
+        margin: 1em 0em 0em 4em;
+        
+      }
+}
+/*Styling for a device (phone) under 800px*/
+@media only screen and (max-width: 800px) {
+    div.home-container div {
+        width: 100%;
+        margin: 0 5% 0 5%;
+        height: auto;
+        margin: 10vw 0 0 0;
+    }
+    div.avatar div {
+        padding-top: 20vw;
+        width: 100%;
+    }
+    div.avatar img {
+        margin:0 0 0 10vw;
+      }
+    div.details p{
+        margin: 8em 0em 2em 0em;
+        padding: 1em 1em 1em 01em;
+        line-height: 1.5em;
+        letter-spacing: 0;
+        word-spacing: 0.1vw;
+    }
+  }
+
+/*DESCRIPTION*/
+/*the description container*/
+div.description-container {
+    position: relative;
+    width: 90%;
+    margin: 1vw 5% 1vw 5%;
+}
+div.photos {
+    width: 40%;
+    float: right;
+    height: auto;
+    padding: 1em;
+}
+div.photos img {
+    border-radius: 1em;
+}
+div.career {
+    float: left;
+    width: 50%;
+}
+/*tablet mode styling*/
+@media only screen and (max-width: 1100px) {
+
+    
+}
+/*mobile phone mode styling*/
+@media only screen and (max-width: 700px) {
+   
+    
 }
