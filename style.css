@@ -3,25 +3,33 @@ html, body {
     padding: 0;
     margin: 0;
     font-size: 1em;
-    background-color: rgb(226, 219, 200);
-    color: rgb(5, 27, 87);
+    background-color: rgb(1, 6, 12);
+    color: rgb(45, 177, 182);
+}
+div.body {
+    width: 95%;
+    height: fit-content;
+    margin: 0 2.5% 0 2.5%;
+    border-style: double;
+    overflow: hidden;
 }
 /*HEADER PART*/
 /*Style for the header container of the page*/
 div.header-container {
-    background-color: rgba(143, 143, 150, 0.603);
-    border-radius: 2em 1em 3em 1em;
+    background-color: rgba(23, 97, 33, 0.747);
+    border-radius: 1em 1em 1em 1em;
     margin: 0vw 22vw 0vw 22vw;
     padding: 0em;
     z-index: 10;
     width:50% ;
-    height:min-content;
+    height: 3.7em;
     overflow: hidden;
+    border-style: double;
     position:fixed;
 }
 div.header-container a {
     text-decoration: none;
-    color: rgb(4, 49, 49);
+    color: rgb(55, 212, 218);
     font-size: min(0.8em, 1vw);
     font-weight: bold;
 }
@@ -35,7 +43,7 @@ div.header-container img {
     padding-right: 1em;
 }
 #profile {
-    padding-top: 0vw;
+    padding-top: 1vw;
 }
 
 /*Styling for a tablet*/
@@ -60,12 +68,17 @@ div.header-container img {
 /* MAIN PAGE */
 /*Styling the home container and its contents*/
 div.home-container {
-    width: 100%;
+    width: 90%;
+    border-style: double;
+    border-radius: 2vw;
     height: auto;
+    background-color: rgba(4, 56, 28, 0.342);
+    border-color: rgba(0, 255, 255, 0.068);
     padding: 0;
-    margin: 0;
+    margin: 0 5% 0 5%;
     align-items: center;
     z-index: 1;
+    overflow: hidden;
 }
 div.home-container div {
     margin: 4vw 0% 1vw 0%;
@@ -74,24 +87,23 @@ div.home-container div {
 /*avatar and the title*/
 div.avatar {
     align-items: center;
-    width: 60%;
+    width: 50%;
     height: auto;
     overflow: hidden;
 }
-div.avatar div {
-    padding-top: 3em;
+div.title {
     width: 100%;
     text-align: center;
-    font-size: larger;
+    font-size: 1.5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(3, 46, 46);
+    color: rgb(14, 138, 111);
 }
 #careers {
     font-size: 0.6em;
-    color: rgb(0, 75, 0);
+    color: rgb(41, 135, 158);
 }
 div.avatar img {
-  margin: 1em 0em 1em 4em;
+  margin: 1em 0em 1em 10em;
   border-radius: 50%;
 }
 /*Description and details*/
@@ -101,13 +113,17 @@ div.details {
     overflow: hidden;
 }
 div.details p{
-    font-size: 1em;
+    font-size: 1.2em;
     text-transform:none;
     text-align: center;
     text-align-last: center;
     line-height: 2em;
-    margin: 18em 2em 2em 2em;
+    margin: 0em 0em 0em 0em;
 }
+div.details strong {
+    color: rgb(8, 136, 168);
+}
+
 /*Styling for a device (tablet) under 1200px*/
 @media only screen and (max-width: 1100px) {
     div.home-container div {
@@ -145,11 +161,11 @@ div.details p{
         width: 100%;
     }
     div.avatar img {
-        margin:0 0 0 10vw;
+        margin:0 0 0 8vw;
       }
     div.details p{
-        margin: 8em 0em 2em 0em;
-        padding: 1em 1em 1em 01em;
+        margin: 8em 0em 2em 9em;
+        padding: 1em 1em 1em 1em;
         line-height: 1.5em;
         letter-spacing: 0;
         word-spacing: 0.1vw;
@@ -163,19 +179,32 @@ div.description-container {
     width: 90%;
     margin: 1vw 5% 1vw 5%;
 }
-div.photos {
-    width: 40%;
-    float: right;
-    height: auto;
-    padding: 1em;
-}
-div.photos img {
-    border-radius: 1em;
-}
 div.career {
     float: left;
-    width: 50%;
+    background-color: rgba(22, 155, 122, 0.089);
+    border-radius: 2em;
+    border-style: double;
+    padding: 1em;
+    border-color: rgba(0, 255, 234, 0.014);
 }
+.titles {
+    padding: 2vw 5vw 0vw 5vw;
+}
+.titles strong {
+    font-size: larger;
+    color: rgb(8, 165, 87);
+}
+.titles p {
+    padding: 0 5v 0vw 5vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     font-size: 0.8em;
+}
+div.career h2 {
+    text-align: center;
+    padding: 3;
+    margin-top: 10vw;
+}
+
 /*tablet mode styling*/
 @media only screen and (max-width: 1100px) {
 
@@ -186,3 +215,141 @@ div.career {
    
     
 }
+
+/*Styling the action button*/
+div.message-btn {
+    position: fixed;
+    width: 100%;
+    height: 10vw;
+}
+
+div.message-btn img {
+    float: right;
+    padding: 40% 2vw 2vw 2vw;
+}
+/*styling the projects part*/
+div.projects {
+    width: 90%;
+    margin: 0 5% 0 5%;
+    border-radius: 1vw;
+    padding: 1em;
+
+    height: fit-content;
+    border-style: double;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.11);
+    border-color: rgba(165, 42, 42, 0.185);
+}
+div.projects h2{
+    text-decoration: underline;
+    text-align: center;
+}
+
+div.websites {
+    width: 90%;
+    height: 30vw;
+    margin: 0 5% 0 5%;
+    background-color: rgba(0, 255, 255, 0.089);
+    border-style: double;
+    border-color: rgba(0, 0, 255, 0.158);
+}
+div.apps {
+    width: 90%;
+    height: 30vw;
+    background-color: rgba(0, 255, 255, 0.089);
+    border-style: double;
+    border-color: rgba(0, 0, 255, 0.158);
+    margin: 0 5% 0 5%;
+}
+div.mmfiles {
+    width: 90%;
+    height: 30vw;
+    background-color: rgba(0, 255, 255, 0.089);
+    border-style: double;
+    border-color: rgba(0, 0, 255, 0.158);
+    margin: 0 5% 0 5%;
+}
+div.floating-button {
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(7, 95, 14, 0.397);
+    border-style: double;
+    border-color: rgba(0, 0, 255, 0.158);
+    margin: 0 5% 0 5%;
+    border-radius: 2vw;
+    float: right;
+}
+div.floating-button img:hover {
+    cursor: pointer;
+}
+div.message-me {
+    width: 70%;
+    height: fit-content;
+    padding: 5vw;
+    display: block;
+    background-color: rgba(8, 80, 76, 0.336);
+    margin: 0 15% 0 15%;
+    position: sticky;
+    overflow: hidden;
+    z-index: 100;
+    display: none;
+    border-style: solid;
+    border-color: rgba(68, 0, 255, 0.199);
+    border-radius: 0vw 10vw 0 10vw;
+}
+div.message-me label{
+    color: rgb(46, 247, 196);
+    font-size: larger;
+    text-align: center;
+}
+div.message-me input {
+    width: 80%;
+    margin: 1em 10% 1em 10%;
+    height: 3vw;
+    border-style: solid;
+    border-color: aqua;
+    border-radius: 2vw;
+    padding: 0em;
+}
+textarea {
+    width: 80%;
+    height:6em;
+    margin: 1em 10% 1em 10%;
+    border-style: solid;
+    border-color: aqua;
+    border-radius: 2vw;
+    padding: 1em;
+}
+button {
+    width: 30%;
+    margin: 3em 35% 0 35%;
+    height: 3vw;
+    border-style: solid;
+    border-color: aqua;
+    border-radius: 2vw;
+    padding: 1em;
+}
+
+
+
+
+/* .container{
+    display: inline-block;
+    font-family: "arial";
+    font-size: 24px;
+  }
+  
+  .typed {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 1.5s;
+    animation-timing-function: steps(30, end);
+    animation-fill-mode: forwards;
+  }
+    
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  } */

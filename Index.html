@@ -18,9 +18,9 @@
     <title>Peter-Irungu  potfolio</title>
 </head>
 <body>
-    <div class="body">
+<div class="body">
+
     <!--Header part of the page-->
-    
     <div class="header-container">
         <ul>
             <li><a href="#home"><img 
@@ -58,33 +58,36 @@
             width="40vw"
             height="40vw">
     </div>
+
+    <!--The home part-->
     <div id="home" class="home-container">
+        <div class="title">
+            <strong> PETER NJOROGE</strong>
+            <P id="careers">
+                Software Developer <br>
+                web Developer
+            </P>
+        </div>
         <div class="avatar">
-            <div class="title">
-                <strong>PETER IRUNGU</strong>
-                <P id="careers">
-                    Software Developer <br>
-                    web Developer
-                </P>
-            </div>
-        <img src="/Multimedia-files/avatar-me.jpeg" 
+        <img src="/Multimedia-files/peter.jpeg.jpg" 
         alt="my avatar icon"
-        width="80%"
-        height="auto">
+        width="70%"
+        height="450vw">
         </div>
         <div class="details">
-        <p>
+        <p class="typed"> 
+            <Strong>about me</Strong><BR>
             "As a highly motivated and detail-oriented
-            web developer, I have honed my skills in 
-            creating innovative and user-friendly 
-            websites.I have a strong understanding
+            web<br> develope,  I have honed my skills in 
+            creating <br>innovative and user-friendly 
+            websites.I have a strong<br> understanding
             of various programming languages 
-            including HTML, CSS, JavaScript, and 
+            including HTML, CSS,<br> JavaScript, and 
             PHP.I have experience working with 
-            popular content management systems such
+            popular content<br> management systems such
             as WordPress and have a deep 
-            understanding of responsive design,
-            cross-browser compatibility, and 
+            understanding of <br>responsive design,
+            cross-browser compatibility, and <br>
             accessibility."
         </p>
         </div>
@@ -92,29 +95,93 @@
 
     <!--the description part-->
     <div id="Description" class="description-container">
-        <div class="photos">
-            <img src="/Multimedia-files/peter.jpeg.jpg" 
-            alt="my photos"
-            width="100%"
-            height="auto">
-        </div>
+    
         <div class="career">
-            <span class="groups">
-                <p>
-                    <strong>||Front-end developer</strong> 
-                    Work on the full life cycle development of time-sensitive projects.
-                    Recommend appropriate technologies to implement new features.
-                    Develop code libraries that can be used for multiple projects.
-                    Review code, layout, and design for projects before client meetings.
-                    Build, deliver, and iterate to help scale projects.
-                    Contribute to a team of back-end developers, designers, project managers, and sales representatives.
-                    Provide regular updates and technical support for new clients up to one month after product development.
-                    Create new methods for improving efficiency.
-                    Job benefits:
-                </p>
-            </span>
+                <h2>Career Paths</h2>
+                <div class="titles">
+                    <strong>||Front-end developer</strong> <br>
+                    <p>
+                        Work on the full life cycle development of time-sensitive projects.
+                        Recommend appropriate technologies to implement new features.
+                        Develop code libraries that can be used for multiple projects.
+                        Review code, layout, and design for projects before client meetings.
+                        Build, deliver, and iterate to help scale projects.
+                        Contribute to a team of back-end developers, designers, project managers, and sales representatives.
+                        Provide regular updates and technical support for new clients up to one month after product development.
+                        Create new methods for improving efficiency.
+                        Job benefits:
+                    </p>
+                </div>
+                <div class="titles">
+                    <strong>||Back-end developer</strong> <br>
+                    <p>
+                        A backend developer is a software engineer who specializes in building and maintaining the server-side component of web applications. Their primary responsibilities include designing, building, and integrating the server-side components and APIs (Application Programming Interfaces) that are used by the frontend of a web application to interact with the underlying data.
+                          Backend developers typically use programming languages such as Python, Ruby, Java, C#, PHP, and Node.js to build server-side components and implement features such as authentication, authorization, payment processing, and database management. They also work with databases such as MySQL, PostgreSQL, MongoDB, and Cassandra to store, retrieve, and manipulate data.
+                    </p>
+                </div>
+                <div class="titles">
+                    <strong>||FullStack Developer</strong> <br>
+                    <p>
+                        A full-stack developer is a software engineer who has the skills and knowledge to work on both the frontend and backend of a web application. They have a comprehensive understanding of the entire web development process, from the client-side user interface to the server-side infrastructure.
+                          Full-stack developers have expertise in a variety of technologies, including HTML, CSS, JavaScript for frontend development and one or more server-side programming languages such as Python, Ruby, Java, PHP, or Node.js. They also need to be familiar with databases such as MySQL, MongoDB, or PostgreSQL and understand how to interact with them using Structured Query Language (SQL).                    </p>
+                </div>
+          
+                 
+       
         </div>
     </div>
+
+       <!--Floating Action Button-->
+       <div class="message-btn">
+        <div class="btn-background">
+            <img src="/Multimedia-files/send-message.png" 
+            alt=""
+            width="50vw"
+            height="50vw"
+            >
+        </div> 
+       </div><br>
+
+       <!--adding the projects samples-->
+       <div class="projects">
+        <div>
+            <Strong>||PROJECTS:</Strong>
+            <h2>Websites</h2>
+             <div class="websites">
+
+             </div>
+            <h2>Mobile apps</h2>
+            <div class="apps">
+
+            </div>
+            <h2>Multimedia Files</h2>
+            <div class="mmfiles">
+
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="message-me">
+        <form >
+                <label for="email-box"> Email:</label><br>
+                <input type="text" id="email-box"><br>
+                <label for="name-box"> Name:</label><br>
+                <input type="text" id="name-box"><br>
+                <label for="message-box">Message body:</label><br>
+                <textarea name="message" id="message"></textarea><br>
+                <button>SEND</button>
+        </form>
+        
+
+    </div>
+    <div class="floating-button" >
+            <img 
+            onclick="contactDisplay()"
+            src="/Multimedia-files/send-message.png" 
+            alt=""
+            width="50vw"
+            height="50vw">
+    </div>
 </div>
+
 </body>
 </html>
