@@ -247,19 +247,26 @@ div.projects h2{
 
 div.websites {
     width: 90%;
-    height: 30vw;
+    height: fit-content;
     margin: 0 5% 0 5%;
     background-color: rgba(0, 255, 255, 0.089);
     border-style: double;
     border-color: rgba(0, 0, 255, 0.158);
 }
+div.websites img {
+    margin: 0 2.5% 0 2.5%;
+}
 div.apps {
     width: 90%;
-    height: 30vw;
+    height: fit-content;
     background-color: rgba(0, 255, 255, 0.089);
     border-style: double;
-    border-color: rgba(0, 0, 255, 0.158);
-    margin: 0 5% 0 5%;
+    border-color: #0000ff28;
+    margin: 0 10% 0 10%;
+}
+div.apps img {
+    padding: 1em 2% 1em 2%;
+    border-radius: 1.5em;
 }
 div.mmfiles {
     width: 90%;
@@ -303,18 +310,18 @@ div.message-me label{
     text-align: center;
 }
 div.message-me input {
-    width: 80%;
-    margin: 1em 10% 1em 10%;
+    width: 70%;
+    margin: 1em 15% 1em 15%;
     height: 3vw;
     border-style: solid;
     border-color: aqua;
     border-radius: 2vw;
-    padding: 0em;
+    padding-left: 1em;
 }
 textarea {
-    width: 80%;
+    width: 70%;
     height:6em;
-    margin: 1em 10% 1em 10%;
+    margin: 1em 15% 1em 15%;
     border-style: solid;
     border-color: aqua;
     border-radius: 2vw;
